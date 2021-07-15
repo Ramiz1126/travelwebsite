@@ -1,0 +1,306 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: black; */
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+body{
+    background-color: white;
+}
+/* Utility class */
+.h-primary{
+    height: 15px;
+    margin: 90px;
+    color: black;
+    text-align: center;
+    font-size: 4rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    /* font-family: 'Bree Serif', serif; */
+}
+.h-secondary{
+    font-size: 3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+/* Navigation bar:LIst styling */
+#navbar{
+    
+    display: flex;
+    position: relative;
+   align-items: center;
+    /* justify-content: center; */
+}  
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+    top: 0px;
+    left: 0px;
+
+}
+/* Logo and image  */
+#logo{
+    /* display: block; */
+    margin: -10px 0px;
+}
+#logo img{
+    height: 45px;
+    margin: 18px 30px;
+
+}
+#navbar ul{
+    display: flex;
+    /* text-align: center; */
+    
+}
+#navbar{
+    display: flex;
+    position: sticky;
+
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.2em;
+}    
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    /* margin: auto; */
+    /* border: 2px solid black;  */
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}    
+#navbar ul li a:hover{
+    color:black;
+    display: block;
+    background-color: white;
+    /* animation: forwards;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: normal; */
+} 
+/* @keyframes #navbar ul li a:hover{
+    
+}  */
+
+/* Home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 0px 200px;
+    height: 521px;
+    
+
+}
+#home::before{
+    content: "";
+    background: url("./images/pexels-bri-schneiter-346529.jpg")  no-repeat center center/cover  ;
+
+    position: absolute;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+
+}
+#home h1{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(54, 53, 53);
+    color: white;
+    margin: 20px;
+    font-size: 1.0rem;
+    border-radius: 25px;
+    /* position: relative; */
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+    /* box-shadow: 0px 5px 21px; */
+
+}
+.btn:hover{
+    color:rgb(24, 24, 24);
+    display: block;
+    background-color:rgb(230, 230, 255);
+    /* border: 2px solid black; */
+
+
+}  
+/* Service section */
+
+
+/* .services-container{
+    display: flex;
+    flex-direction: column;
+    margin: 169px;
+    padding: 90px;
+} */
+
+#services .box{
+    border: 2px solid brown;
+    border-radius: 20px;
+    text-align: center;
+    padding: 41px;
+    /* display: block; */
+    margin: auto;
+    background-color: rgb(217,217,217);
+    margin: 25px 6px;
+    padding: 30px;
+    border-radius: 20px;
+    /* text-align: center; */
+}
+
+.nav{
+    margin-top: 7.5rem;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+}
+
+#services{
+    display: flex;
+    color: black;
+    margin: 100px;
+    justify-content: center;
+    align-items: center;   
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+#services .box img{
+    height: 268px;
+    width: 260px;
+    margin: auto;
+    display: block;
+    /* width: 75px; */
+}
+/* #services-container h1{
+    color: black;
+} */
+
+
+/* Client-Section */
+#about-section{
+    position: relative;
+    /* position: absolute; */
+    /* height: 344px; */
+    align-items: center;
+}
+
+#about-section::before{
+    content: "";
+    position: absolute;
+    background-image: url('./board-bread-breakfast-bunch-349610.jpg') ;
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-position: 0px;
+    background-size: cover;
+}
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img{
+    height: 124px;
+    padding: 34px;
+}
+.about-items{
+    padding: 34px;
+}
+/* #invert img{
+    filter: invert(100%);
+} */
+  
+/* conact section  */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(128, 128, 128);
+    opacity: .9;
+    z-index: -1;
+    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
+    background-position: right bottom, left top; */
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    text-align: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 9px 20px;
+    margin: 20px;
+    /* width: 100%; */
+}
