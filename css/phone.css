@@ -1,10 +1,13 @@
 /* Navigation */
 #navbar {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #navbar ul li a{
-    font-size: 1rem;
+    font-size: .5rem;
+    font-weight: lighter;
     padding: 0px 7px;
     padding-bottom: 8px;
 }
