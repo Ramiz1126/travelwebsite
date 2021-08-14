@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.largecontainer{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    /* margin: 10px; */
+}
+
+.container1{
+
+    /* display: flex; */
+    background-color: cornflowerblue;
+    width: 98%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.container2{
+    display: flex;
+    background-color: darkgray;
+    width: 98%;
+    position: relative;
+    /* justify-content: center; */
+    margin-right: 10px;
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+.container3{
+    display: flex;
+    background-color: yellow;
+    width: 98%;
+    position: relative;
+    /* margin-right: 10px; */
+
+}
+
+.inside{
+    display: flex;
+    background-color: rgb(145, 172, 141);
+    position: absolute;
+    width: 45%;
+    height: 580px;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+}
+
+.box1{
+    left: 0;
+    top: 0;
+    /* border: 2px solid red; */
+    /* margin: 10px 5px; */
+    width: 85%;
+    height: 45%;
+
+    
+}
+.box2{
+    left: 0;
+    /* border: 2px solid red; */
+    /* margin: 10px 5px; */
+    width: 85%;
+    height: 45%;
+    bottom: 0;
+    
+}
+
+.box3{
+    /* left: 0; */
+    width: 45%;
+    height: 47%;
+    margin-bottom: 2px;
+    /* float: left; */
+    background-color: pink;
+    margin: 1em;
+    
+}
+.same-box{
+    width: 45%;
+    height: 47%;
+    margin-bottom: 2px;
+    /* float: left; */
+    background-color: pink;
+    right: 0;
+}
+.box4{
+   /* right: 0; */
+   width: 93%;
+   height: 45%;
+   bottom: 0;
+   margin-top: 5px;
+   /* float: left; */
+   background-color: pink;
+   margin: 1em;
+}
+
+.plus{
+    display: flex;
+    position: absolute;
+    width: 45%;
+    height: 45.85%;
+
+}
+
+
+.item5{
+    background-color: blue;
+    left: 0;
+    top: 0;
+    
+    
+}
+.box5{
+    right: 0;
+    /* border-right: 30px solid white; */
+}
+.item6{
+    background-color: blue;
+    right: 0;
+    top: 0;
+
+}
+.item7{
+    background-color: blue;
+    left: 0;
+    bottom: 0;
+
+
+}
+.item8{
+    background-color: blue;
+    right: 0;
+    bottom: 0;
+
+}
+
+.cont{
+    margin: 25px;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    position: relative;
+}
+
+#scrolltotop{
+    position: fixed;
+    background-color: black;
+    color: white;
+    border: none;
+    right: 15px;
+    bottom: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .largecontainer{
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    .container1{
+        display: flex;
+        height: 33%;
+        margin-bottom: 10px;
+        /* max-height: 200px; */
+        /* display: inline-block; */
+    }
+    .container2{
+        height: 33%;
+        /* max-height: 200px; */
+        margin-bottom: 10px;
+    }
+    .container3{
+        height: 33%;
+        /* max-height: 200px; */
+    }
+    .box1{
+        width: 95%;
+        /* height: 170px; */
+    }
+    .box2{
+        width: 95%;
+        /* height: 170px; */
+    }
+    .box3{
+        width: 45%;
+        height: 40%;
+    }
+    .same-box{
+        width: 45%;
+        height: 40%;
+    }
+    .box4{
+        min-width: 96%;
+        height: 41%;
+    }
+    .plus{
+        display: flex;
+        position: absolute;
+        width: 45.90%;
+        height: 35%;
+    }
+    .cont{
+        margin: 29px;
+        padding: 20px;
+        /* justify-content: center; */
+        /* align-items: center; */
+        
+    }
+    .item5{
+        background-color: blue;
+        left: 0;
+        top: 0;
+        
+        
+    }
+    .item6{
+        background-color: blue;
+        right: 0;
+        top: 0;
+    
+    }
+    .item7{
+        background-color: blue;
+        left: 0;
+        bottom: 0;
+        
+    
+    
+    }
+    .item8{
+        background-color: blue;
+        right: 0;
+        bottom: 0;
+    
+    }
+    
+
+}
+
