@@ -28,6 +28,7 @@
 /* Services section  */
 #services{
     flex-direction: column;
+    margin-top: 5px;
 }
 
 #services .box { 
@@ -61,8 +62,18 @@
 /* Utility classes */
 .h-primary{
     font-size:26px;
+    margin-top: 50px;
+
 }
 .btn{
     font-size: 13px;
     padding: 4px 8px;
+}
+
+.h-secondary{
+    font-size: medium;
+}
+
+.activity{
+    margin-top: 0;
 }
